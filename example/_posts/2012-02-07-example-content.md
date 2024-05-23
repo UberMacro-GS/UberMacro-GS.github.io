@@ -27,18 +27,23 @@ HTML defines a long list of available inline tags, a complete list of which can 
 Most of these elements are styled by browsers with few modifications on our part.
 
 ## Heading 2
+
 Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
 
 ### Heading 3
+
 Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor.
 
 #### Heading 4
+
 Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor.
 
 ##### Heading 5
+
 Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor.
 
 ###### Heading 6
+
 Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor.
 
 ## Code
@@ -61,9 +66,9 @@ adder(2, 6);
 
 Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
 
-* Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-* Donec id elit non mi porta gravida at eget metus.
-* Nulla vitae elit libero, a pharetra augue.
+- Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+- Donec id elit non mi porta gravida at eget metus.
+- Nulla vitae elit libero, a pharetra augue.
 
 Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
 

@@ -20,6 +20,7 @@ For an introduction to markdown in general, see [Mastering Markdown][mm] and [kr
 {:.note}
 
 ## A word on building speeds
+
 If building speeds are a problem, try using the `--incremental` flag, e.g.
 
     bundle exec jekyll serve --incremental
@@ -34,9 +35,11 @@ other then the page or post itself.
 This makes it ideal for writing new posts and previewing changes, but not setting up new content.
 
 ## Adding a table of contents
+
 You can add a generated table of contents to any page by adding `{:toc}` below a list.
 
 Markdown:
+
 ~~~md
 * this unordered seed list will be replaced by the toc
 {:toc}
@@ -62,8 +65,8 @@ A sticky table of contents will reduce the amount of space freed up by the `no_b
 This is necessary to ensure large code blocks or tables don't overlap with the ToC.
 {:.note}
 
-
 ## Adding notes
+
 You can add a note by adding the `note` class to a paragraph.
 
 Example:
@@ -72,6 +75,7 @@ You can add a note.
 {:.note}
 
 Markdown:
+
 ~~~markdown
 You can add a note.
 {:.note}
@@ -89,6 +93,7 @@ A custom label.
 {:.note title="Attention"}
 
 ## Adding large text
+
 You can add large text by adding the `lead` class to the paragraph.
 
 Example:
@@ -97,12 +102,14 @@ You can add large text.
 {:.lead}
 
 Markdown:
+
 ~~~markdown
 You can add large text.
 {:.lead}
 ~~~
 
 ## Adding large images
+
 You can make an image span the full width by adding the `lead` class.
 
 Example:
@@ -110,11 +117,12 @@ Example:
 ![Full-width image](https://via.placeholder.com/800x100){:.lead width="800" height="100" loading="lazy"}
 
 Markdown:
+
 ~~~markdown
 ![Full-width image](https://via.placeholder.com/800x100){:.lead width="800" height="100" loading="lazy"}
 ~~~
 
-It is recommended to provide the dimension of the image via the `width` and `height` attributes, 
+It is recommended to provide the dimension of the image via the `width` and `height` attributes,
 so that browsers can calculate the layout before the images are loaded. Combining this with the `loading="lazy"` attribute
 allows modern browsers to load the images just-in-time as the users scrolls.
 
@@ -123,6 +131,7 @@ but it has been removed in v9 in favor of this more standards-based approach.
 {:.note}
 
 ## Adding image captions
+
 You can add captions to large images by adding the `figcaption` class to the paragraph after the image:
 
 ![Full-width image](https://via.placeholder.com/800x100){:.lead width="800" height="100" loading="lazy"}
@@ -131,6 +140,7 @@ An optional caption for an image.
 {:.figcaption}
 
 Markdown:
+
 ~~~md
 ![Full-width image](https://via.placeholder.com/800x100){:.lead width="800" height="100" loading="lazy"}
 
@@ -138,8 +148,8 @@ A caption for an image.
 {:.figcaption}
 ~~~
 
-
 ## Adding large quotes
+
 You can make a quote "pop out" by adding the `lead` class.
 
 Example:
@@ -148,12 +158,14 @@ Example:
 {:.lead}
 
 Markdown:
+
 ~~~
 > You can make a quote "pop out".
 {:.lead}
 ~~~
 
 ## Adding faded text
+
 You can gray out text by adding the `faded` class. Use this sparingly and for information that is not essential, as it is more difficult to read.
 
 Example:
@@ -162,12 +174,14 @@ I'm faded, faded, faded.
 {:.faded}
 
 Markdown:
+
 ~~~md
 I'm faded, faded, faded.
 {:.faded}
 ~~~
 
 ## Adding tables
+
 Adding tables is straightforward and works just as described in the [kramdown docs][ksyntab], e.g.
 
 | Default aligned |Left aligned| Center aligned  | Right aligned  |
@@ -175,6 +189,7 @@ Adding tables is straightforward and works just as described in the [kramdown do
 | First body part |Second cell | Third cell      | fourth cell    |
 
 Markdown:
+
 ~~~md
 | Default aligned |Left aligned| Center aligned  | Right aligned  |
 |-----------------|:-----------|:---------------:|---------------:|
@@ -199,6 +214,7 @@ Tables adopts to the font size! You can decrease the size of the table by adding
 {:.note}
 
 ### Scroll table
+
 If the extra space still isn't enough, the table will receive a scrollbar.
 It is browser default behavior to break the lines inside table cells to fit the content on the screen.
 By adding the `scroll-table` class on a table, the behavior is changed to never break lines inside cells, e.g:
@@ -217,8 +233,8 @@ By adding the `scroll-table` class on a table, the behavior is changed to never 
 You can add the `scroll-table` class to a markdown table by putting `{:.scroll-table}` in line directly below the table.
 To add the class to a HTML table, add the it to the `class` attribute of the `table` tag, e.g. `<table class="scroll-table">`.
 
-
 ### Small tables
+
 If a table is small enough to fit the screen even on small screens, you can add the `stretch-table` class
 to force a table to use the entire available content width. Note that stretched tables can no longer be scrolled.
 
@@ -240,8 +256,8 @@ An optional caption for a table
 {:.figcaption}
 ~~~
 
-
 ## Adding code blocks
+
 To add a code block without syntax highlighting, simply indent 4 spaces (regular markdown).
 For code blocks with code highlighting, use `~~~<language>`. This syntax is also supported by GitHub.
 For more information and a list of supported languages, see [Rouge](http://rouge.jneen.net/).
@@ -294,19 +310,23 @@ You can read more about it [here](https://github.com/penibelst/jekyll-compress-h
 {:.note}
 
 ## Adding math
+
 Before adding math blocks, make sure you've [set up math support](./config.md#enabling-math-blocks).
 
 ### Inline
+
 Example:
 
 Lorem ipsum $$ f(x) = x^2 $$.
 
 Markdown:
+
 ~~~md
 Lorem ipsum $$ f(x) = x^2 $$.
 ~~~
 
 ### Block
+
 Example:
 
 $$
@@ -362,8 +382,6 @@ Instead, `aligned` should be used, e.g. `\begin{aligned} ... \end{aligned}`.
 Continue with [Scripts](scripts.md){:.heading.flip-title}
 {:.read-more}
 
-
 [mm]: https://guides.github.com/features/mastering-markdown/
 [ksyn]: https://kramdown.gettalong.org/syntax.html
 [ksyntab]:https://kramdown.gettalong.org/syntax.html#tables
-[rtable]: https://dbushell.com/2016/03/04/css-only-responsive-tables/
